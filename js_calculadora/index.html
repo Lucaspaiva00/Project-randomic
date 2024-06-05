@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8"/>
+		<title>Calc. WEB</title>
+		
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		
+		<script src="javascript.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<center>
+		
+			<table border="1">
+			
+				<thead>
+					<tr>
+						<th colspan="4">
+							<input type="text" id="in" disabled/>
+						</th>
+					</tr>
+				</thead>
+		
+				<tbody>
+					<tr>
+						<td>
+							<button onclick="escreve(7);">7</button>
+						</td>
+						<td>
+							<button onclick="escreve(8);">8</button>
+						</td>
+						<td>
+							<button onclick="escreve(9);">9</button>
+						</td>
+						<td>
+							<button onclick="operacao('+');">+</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="escreve(4);">4</button>
+						</td>
+						<td>
+							<button onclick="escreve(5);">5</button>
+						</td>
+						<td>
+							<button onclick="escreve(6);">6</button>
+						</td>
+						<td>
+							<button onclick="operacao('-');">-</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="escreve(1);">1</button>
+						</td>
+						<td>
+							<button onclick="escreve(2);">2</button>
+						</td>
+						<td>
+							<button onclick="escreve(3);">3</button>
+						</td>
+						<td>
+							<button onclick="operacao('*');">*</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="escreve(0);">0</button>
+						</td>
+						<td>
+							<button onclick="calc(1);">=</button>
+						</td>
+						<td>
+							<button onclick="escreve('.');">.</button>
+						</td>
+						<td>
+							<button onclick="operacao('/');">/</button>
+						</td>
+					</tr>	
+
+					<tr>
+						<td colspan="2">
+							<button onclick="limpa();">C</button>
+						</td>
+						<td colspan="2">
+							<button onclick="apagaUltimo();"><=</button>
+						</td>
+					</tr>						
+				</tbody>
+			
+			</table>
+		
+		</center>
+	
+	</body>
+	
+</html>

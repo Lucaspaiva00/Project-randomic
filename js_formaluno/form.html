@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<link rel='stylesheet' type='text/css' href='estilo.css'>
+	<title>Exercicio: Calculando Aumento</title>
+</head>
+<body>
+	<form name="form1" action="" method="post"><table border="0">
+		<tr><th colspan = "2">Formulário de Salários</th></tr>
+		<tr><td><label for="nome">Nome:</label></td><td><input required name="nome" type="text" placeholder="Digite o nome"></td></tr>
+		<tr><td><label for="salario">Salário:</label></td><td><input required name="salario" type="number" placeholder="Digite o Salário"></td></tr>
+		<tr><td><label for="dataadmissao">Data Admissão:</label></td><td><input required name="dataadmissao" type="date"></td></tr>
+		<tr><td colspan="2"><button id="adicionar">Adicionar</button></td></tr>
+	</table>	
+	</form>
+	<br>
+	<table border="0">
+		<thead>
+			<tr><th colspan = "5">Resultado dos Aumentos</th></tr>
+			<tr><td>Nome:</td><td>Data Admissão</td><td>Salário</td><td>Taxa</td><td>Novo Salário</td></tr>
+		</thead>
+		<tbody id="linhas"></tbody>
+	</table>
+	<template id="tabLinhas">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</template>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
