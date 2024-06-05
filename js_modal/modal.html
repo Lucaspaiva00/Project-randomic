@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script type="text/javascript" src="./jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(e){
+                $('.btn_modal').click(function(){
+                    $('#modal').fadeIn(500);
+                });
+                $('.fechar').click(function(){
+                    $('#modal').fadeOut(500);
+                });
+            });
+        </script>
+        <style rel="stylesheet" type="text/css">
+        #modal{
+            display: none;
+            background: rgba(0,0,0,0.6);
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            position: fixed;
+        }
+        .modal-box{
+            background: #fff;
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            left:50%;
+            top:30%;
+            margin-left: -25%;
+        }
+        .fechar{
+            padding: 2px 5px;
+            border: 1px solid #999;
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            border-radius: 5px;
+            color: #999;
+            cursor:pointer;
+            font-weight: bold;
+        }
+        .fechar:hover{
+            border-color: #111;
+            color: #111;
+        }
+        </style>
+    </head>
+    <body>
+        <input type="button" class="btn_modal" value="Abrir Modal">
+        <div id="modal">
+            <div class="modal-box">
+                <div class="modal-box-conteudo">
+    
+                </div>
+                <div class="fechar">X</div>
+            </div>
+        </div>
+    </body>    
+</html>
