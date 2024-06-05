@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+        var pessoa = {
+            nome : "Fulano da Silva",
+            telefone : "1234-4321",
+            idade : 98,
+            profissao : "motorista de fuga",
+            carros: {
+                trabalho : "Audi A5",
+                passeio : "Meriva"
+            },
+            empregado : true
+        }; 
+
+        var textoJson = '{' + 
+                        '   "modelo": "Zafira", ' +
+                        '   "marca": "Chevrolet", ' +
+                        '   "placa": "ABC-1234" ' +
+                        '}';
+        
+        console.log(pessoa.nome);
+        console.log(pessoa.profissao);
+        console.log(pessoa.carros.trabalho);
+
+        var obj = JSON.parse(textoJson);
+
+        console.log(obj.placa);
+
+        console.log(JSON.stringify(pessoa));
+
+    </script>
+    
+</body>
+</html>

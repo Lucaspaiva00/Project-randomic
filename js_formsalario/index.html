@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Cadastro</title>
+		<script src="javascript.js"></script>
+	</head>
+
+	<body>
+		<form>
+			Nome:
+			<input type="text" id="nome"/><br>
+			Matricula:
+			<input type="text" id="matricula"/><br>
+			Nota 1:
+			<input type="text" id="n1"/><br>
+			Nota 2:
+			<input type="text" id="n2"/><br>
+			Nota 3:
+			<input type="text" id="n3"/><br>
+			<input type="button" value="Lançar" onclick="lancar();" /><br>
+		</form>
+		
+		<table border="1">
+			<thead>
+				<tr>
+					<td>Nome</td>
+					<td>Matricula</td>
+					<td>Média</td>
+					<td>Status</td>
+				</tr>
+			</thead>
+			<tbody id="info">
+			</tbody>
+		</table>
+	</body>
+
+</html>

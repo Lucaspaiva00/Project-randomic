@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ['corechart'] });
+    </script>
+
+</head>
+<body onload="draw();" >
+    
+    <div id="chart"></div>
+    
+    <script>
+    
+        var grafico = document.querySelector("#chart");
+
+        function draw(){
+
+            var data = new google.visualization.arrayToDataTable(
+                [
+                    ["Mês", "Lucro", { role: "style" }],
+                    ["Janeiro", 1200, "red"],
+                    ["Fevereiro", 2000, "pink"],
+                    ["Março", 1850, "purple"],
+                    ["Abril", 2340, "orange"]
+                ]
+            );
+
+            var options = {
+                title: "Grafico de Lucros",
+                height: 400,
+                width: 600,
+                //pieHole: 0.4
+                is3D: true
+            };
+
+            var chart = new google.visualization.ColumnChart(grafico);
+
+            chart.draw(data, options);
+
+        }
+
+    </script>
+
+</body>
+</html>
